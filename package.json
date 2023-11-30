@@ -1,12 +1,13 @@
 {
-  "name": "ngx-phone-input-app",
+  "name": "ngx-dialer-input-app",
   "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-library": "ng build ngx-dialer-input"
   },
   "private": true,
   "dependencies": {

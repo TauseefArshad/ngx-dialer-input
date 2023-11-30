@@ -12,8 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-phone-input": [
-        "dist/ngx-phone-input"
+      "ngx-dialer-input": [
+        "dist/ngx-dialer-input"
       ]
     },
     "declaration": false,

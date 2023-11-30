@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-phone-input-app": {
+    "ngx-dialer-input-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-phone-input-app",
+            "outputPath": "dist/ngx-dialer-input-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-phone-input-app:build:production"
+              "browserTarget": "ngx-dialer-input-app:build:production"
             },
             "development": {
-              "browserTarget": "ngx-phone-input-app:build:development"
+              "browserTarget": "ngx-dialer-input-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-phone-input-app:build"
+            "browserTarget": "ngx-dialer-input-app:build"
           }
         },
         "test": {
@@ -95,23 +95,23 @@
         }
       }
     },
-    "ngx-phone-input": {
+    "ngx-dialer-input": {
       "projectType": "library",
-      "root": "projects/ngx-phone-input",
-      "sourceRoot": "projects/ngx-phone-input/src",
+      "root": "projects/ngx-dialer-input",
+      "sourceRoot": "projects/ngx-dialer-input/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-phone-input/ng-package.json"
+            "project": "projects/ngx-dialer-input/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-phone-input/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-dialer-input/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-phone-input/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-dialer-input/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -119,7 +119,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-phone-input/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-dialer-input/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

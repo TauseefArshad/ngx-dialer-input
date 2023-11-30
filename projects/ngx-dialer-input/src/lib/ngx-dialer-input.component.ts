@@ -21,20 +21,20 @@ import { CountryISO } from './enums/country-iso.enum';
 import { SearchCountryField } from './enums/search-country-field.enum';
 import { ChangeData } from './interfaces/change-data';
 import { Country } from './model/country.model';
-import { phoneNumberValidator } from './ngx-phone-input.validator';
+import { phoneNumberValidator } from './ngx-dialer-input.validator';
 import { PhoneNumberFormat } from './enums/phone-number-format.enum';
 
 @Component({
 	// tslint:disable-next-line: component-selector
-	selector: 'ngx-phone-input',
-	templateUrl: './ngx-phone-input.component.html',
-	styleUrls: ['./bootstrap-dropdown.css', './ngx-phone-input.component.css'],
+	selector: 'ngx-dialer-input',
+	templateUrl: './ngx-dialer-input.component.html',
+	styleUrls: ['./bootstrap-dropdown.css', './ngx-dialer-input.component.css'],
 	providers: [
 		CountryCode,
 		{
 			provide: NG_VALUE_ACCESSOR,
 			// tslint:disable-next-line:no-forward-ref
-			useExisting: forwardRef(() => NgxPhoneInputComponent),
+			useExisting: forwardRef(() => NgxDialerInputComponent),
 			multi: true,
 		},
 		{
@@ -44,7 +44,7 @@ import { PhoneNumberFormat } from './enums/phone-number-format.enum';
 		},
 	],
 })
-export class NgxPhoneInputComponent implements OnInit, OnChanges {
+export class NgxDialerInputComponent implements OnInit, OnChanges {
 	@Input() value: string | undefined = '';
 	@Input() preferredCountries: Array<string> = [];
 	@Input() enablePlaceholder = true;
@@ -116,10 +116,7 @@ export class NgxPhoneInputComponent implements OnInit, OnChanges {
 		this.checkSeparateDialCodeStyle();
 	}
 
-	/*
-		This is a wrapper method to avoid calling this.ngOnInit() in writeValue().
-		Ref: http://codelyzer.com/rules/no-life-cycle-call/
-	*/
+
 	init() {
 		this.fetchCountryData();
 		if (this.preferredCountries.length) {
@@ -146,9 +143,7 @@ export class NgxPhoneInputComponent implements OnInit, OnChanges {
 		this.countryChange.emit(country);
 	}
 
-	/**
-	 * Search country based on country name, iso2, dialCode or all of them.
-	 */
+
 	public searchCountry() {
 		if (!this.countrySearchText) {
 			this.countryList.nativeElement
@@ -247,10 +242,8 @@ export class NgxPhoneInputComponent implements OnInit, OnChanges {
 		this.checkSeparateDialCodeStyle();
 
 		if (!this.value) {
-			// Reason: avoid https://stackoverflow.com/a/54358133/1617590
-			// tslint:disable-next-line: no-null-keyword
-			// @ts-ignore
-      this.propagateChange(null);
+
+      this.propagateChange(null as any);
 		} else {
 			const intlNo = number
 				? this.phoneUtil.format(number, lpn.PhoneNumberFormat.INTERNATIONAL)
@@ -308,8 +301,6 @@ export class NgxPhoneInputComponent implements OnInit, OnChanges {
 				dialCode: '+' + this.selectedCountry.dialCode,
 			});
 		} else {
-			// Reason: avoid https://stackoverflow.com/a/54358133/1617590
-			// tslint:disable-next-line: no-null-keyword
 			// @ts-ignore
       this.propagateChange(null);
 		}
@@ -536,8 +527,6 @@ export class NgxPhoneInputComponent implements OnInit, OnChanges {
 				if (this.phoneNumber) {
 					this.onPhoneNumberChange();
 				} else {
-					// Reason: avoid https://stackoverflow.com/a/54358133/1617590
-					// tslint:disable-next-line: no-null-keyword
 					// @ts-ignore
           this.propagateChange(null);
 				}

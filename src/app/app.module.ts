@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxPhoneInputModule } from 'projects/ngx-phone-input/src/lib/ngx-phone-input.module';
+import { NgxDialerInputModule } from 'projects/ngx-dialer-input/src/lib/ngx-dialer-input.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { NgxPhoneInputModule } from 'projects/ngx-phone-input/src/lib/ngx-phone-
     BrowserModule,
     FormsModule,
 		ReactiveFormsModule,
-		NgxPhoneInputModule,
+		NgxDialerInputModule,
     BrowserAnimationsModule
   ],
   providers: [],

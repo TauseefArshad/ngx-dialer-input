@@ -5,20 +5,20 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NativeElementInjectorDirective } from './directives/native-element-injector.directive';
-import { NgxPhoneInputComponent } from './ngx-phone-input.component';
+import { NgxDialerInputComponent } from './ngx-dialer-input.component';
 
 export const dropdownModuleForRoot: ModuleWithProviders<BsDropdownModule> = BsDropdownModule.forRoot();
 
 @NgModule({
-	declarations: [NgxPhoneInputComponent, NativeElementInjectorDirective],
+	declarations: [NgxDialerInputComponent, NativeElementInjectorDirective],
 	imports: [
 		CommonModule,
 		FormsModule,
 		ReactiveFormsModule,
 		dropdownModuleForRoot,
   ],
-	exports: [NgxPhoneInputComponent, NativeElementInjectorDirective],
+	exports: [NgxDialerInputComponent, NativeElementInjectorDirective],
 })
-export class NgxPhoneInputModule {
+export class NgxDialerInputModule {
 
 }

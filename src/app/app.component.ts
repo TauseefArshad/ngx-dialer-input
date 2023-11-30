@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { CountryISO } from 'projects/ngx-phone-input/src/lib/enums/country-iso.enum';
-import { PhoneNumberFormat } from 'projects/ngx-phone-input/src/lib/enums/phone-number-format.enum';
-import { SearchCountryField } from 'projects/ngx-phone-input/src/lib/enums/search-country-field.enum';
+import { CountryISO } from 'projects/ngx-dialer-input/src/lib/enums/country-iso.enum';
+import { PhoneNumberFormat } from 'projects/ngx-dialer-input/src/lib/enums/phone-number-format.enum';
+import { SearchCountryField } from 'projects/ngx-dialer-input/src/lib/enums/search-country-field.enum';
+
 
 @Component({
   selector: 'app-root',
@@ -21,10 +22,6 @@ export class AppComponent {
 	phoneForm = new FormGroup({
 		phone: new FormControl(undefined, [Validators.required]),
 	});
-
-	changePreferredCountries() {
-		this.preferredCountries = [CountryISO.India, CountryISO.Canada];
-	}
 
   get f() {
     return this.phoneForm.get('phone');
