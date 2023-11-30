@@ -1,0 +1,37 @@
+{
+  "name": "ngx-phone-input",
+  "version": "1.0.1",
+  "peerDependencies": {
+    "@angular/common": "^16.1.0",
+    "@angular/core": "^16.1.0",
+    "google-libphonenumber": "^3.2.33",
+    "intl-tel-input": "^18.2.1",
+    "ngx-bootstrap": "^11.0.2"
+  },
+
+  "author": {
+    "name": "Tauseef Arshad",
+    "email": "itauseefarshad@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "ng8",
+    "ng9",
+    "ng10",
+    "angular 15",
+    "angular 16",
+    "angular 17",
+    "intl-tel-input",
+    "phone number",
+    "validation"
+  ],
+  "license": "MIT",
+
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/google-libphonenumber": "^7.4.30"
+  }
+}
