@@ -17,6 +17,7 @@
 			<div class="search-container"
 				*ngIf="searchCountryFlag && searchCountryField">
 				<input id="country-search-box"
+          autocomplete="off"
 					[(ngModel)]="countrySearchText"
 					(keyup)="searchCountry()"
 					(click)="$event.stopPropagation()"
@@ -55,7 +56,7 @@
 	<input type="tel"
 		[id]="inputId"
 		autocomplete="off"
-		[ngClass]="cssClass"
+		[ngClass]="cssClass+' '+'invalidd'"
 		(blur)="onTouched()"
 		(keypress)="onInputKeyPress($event)"
 		[(ngModel)]="phoneNumber"

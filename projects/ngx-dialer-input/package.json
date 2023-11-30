@@ -1,6 +1,6 @@
 {
   "name": "ngx-dialer-input",
-  "version": "1.0.1",
+  "version": "16.0.1",
   "peerDependencies": {
     "@angular/common": "^16.1.0",
     "@angular/core": "^16.1.0",
@@ -16,6 +16,7 @@
     "name": "Tauseef Arshad",
     "email": "itauseefarshad@gmail.com"
   },
+  "license": "MIT",
 
   "keywords": [
     "angular",
