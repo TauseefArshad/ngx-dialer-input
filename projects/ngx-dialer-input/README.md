@@ -8,6 +8,9 @@ Validation with [google-libphonenumber](https://github.com/ruimarinho/google-lib
 | ------------------ |----------------| ------------- |
 | 16.x.x             | 16             | >= 11.0.2     |
 
+View example
+
+![alt](assets/ngx-dialer-input.png)
 
 ## Installation
 
