@@ -10,7 +10,7 @@ Validation with [google-libphonenumber](https://github.com/ruimarinho/google-lib
 
 View example
 
-![alt](assets/ngx-dialer-input.png)
+![alt](https://github.com/TauseefArshad/ngx-dialer-input/blob/main/assets/ngx-dialer-input.png?raw=true)
 
 ## Installation
 
