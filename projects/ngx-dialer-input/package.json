@@ -1,9 +1,9 @@
 {
   "name": "ngx-dialer-input",
-  "version": "16.0.5",
+  "version": "17.0.0",
   "peerDependencies": {
-    "@angular/common": "^16.1.0",
-    "@angular/core": "^16.1.0",
+    "@angular/common": "16.x - 17.x",
+    "@angular/core": "16.x - 17.x",
     "google-libphonenumber": "^3.2.33",
     "intl-tel-input": "^18.2.1",
     "ngx-bootstrap": "^11.0.2"

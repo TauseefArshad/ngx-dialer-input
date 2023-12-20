@@ -7,6 +7,7 @@ Validation with [google-libphonenumber](https://github.com/ruimarinho/google-lib
 | ngx-dialer-input   | Angular        | ngx-bootstrap |
 | ------------------ |----------------| ------------- |
 | 16.x.x             | 16             | >= 11.0.2     |
+| 17.x.x             | 17             | >= 11.0.2     |
 
 View example
 
