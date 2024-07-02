@@ -6,7 +6,7 @@
     "@angular/core": "16.x - 17.x",
     "google-libphonenumber": "^3.2.33",
     "intl-tel-input": "^18.2.1",
-    "ngx-bootstrap": "^11.0.2"
+    "ngx-bootstrap": "^12.0.0"
   },
   "repository": {
     "type": "git",
