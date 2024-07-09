@@ -1,6 +1,6 @@
 {
   "name": "ngx-dialer-input",
-  "version": "17.0.2",
+  "version": "18.0.0",
   "peerDependencies": {
     "@angular/common": "16.x - 18.x",
     "@angular/core": "16.x - 18.x",
@@ -23,6 +23,7 @@
     "angular15",
     "angular14",
     "angular17",
+    "angular18",
     "input",
     "phonenumber",
     "phonenumberinput",

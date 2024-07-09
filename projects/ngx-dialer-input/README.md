@@ -8,6 +8,7 @@ Validation with [google-libphonenumber](https://github.com/ruimarinho/google-lib
 | ------------------ |----------------| ------------- |
 | 16.x.x             | 16             | >= 11.0.2     |
 | 17.x.x             | 17             | >= 11.0.2     |
+| 18.x.x             | 18             | >= 18.0.0     |
 
 View example
 
